@@ -6,6 +6,29 @@
 
 A guide to checking out the code and building it
 
+== Prerequisites
+
+* *Java 11* or later (the project targets Java 11; CI tests against Java 11, 17, and 21)
+* *Gradle 8.10* (provided via the Gradle Wrapper — no manual install required)
+
+== Version Compatibility
+
+[cols="1,1",options="header"]
+|===
+| Component | Version
+| Gradle | 8.10
+| Java (source/target) | 11
+| Java (CI tested) | 11, 17, 21
+| JUnit Jupiter | 5.9.0
+| Checkstyle | 10.4
+| JMH plugin | 0.6.8
+| jcstress plugin | 0.8.15
+| bnd builder plugin | 6.3.1
+| Asciidoctor plugin | 3.3.2
+|===
+
+NOTE: Checkstyle 10.4 requires Java 11 or later to run. This aligns with the project's minimum Java version.
+
 == Getting Started
 
 1. Check out the project locally to your machine
