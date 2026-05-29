@@ -7,6 +7,14 @@
 == 4.0.0
 
 * Minimum Java version now 11
+* CI now tests against Java 11, 17, and 21
+* Gradle wrapper updated to 8.10
+* Updated jcstress plugin to 0.8.15
+* Updated JMH plugin to 0.6.8
+* Updated bnd builder plugin to 6.3.1
+* Updated Checkstyle to 10.4 (requires Java 11+)
+* Updated JUnit Jupiter to 5.9.0
+* Removed `org.asciidoctor.jvm.gems` plugin (no longer needed)
 * Issue #323 - `WorkerPool` and `WorkProcessor` have been removed, no more `Disruptor::handleEventsWithWorkerPool`
 * `Disruptor` constructors using `Executor` have been removed. Use `ThreadFactory` instead.
 * Rolled up event handling extension interfaces on to `EventHandler`:
